@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<style>
+    main{
+        height:100vh;
+        background-color: azure;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    table,tr,th,td{
+        border:2px solid black;
+        border-collapse: collapse;
+        text-align: center;
+
+    
+    }
+
+    table{
+        height:200px;
+        width:300px;
+        
+    }   
+    tr:nth-child(even){
+
+background-color: rgb(229, 187, 132);
+    }
+</style>
+<body>
+    <main>
+         <table >
+        <caption>Student table</caption>
+        <tr>
+            <th>Name</th>
+            <th>Class</th>
+            <th>ID</th>
+          
+        </tr>
+        <tr>
+            <td>Shubham</td>
+            <td>BCA</td>
+            <td>101</td>
+        </tr>
+
+
+         <tr>
+            <td>Aman</td>
+            <td>BCA</td>
+            <td>103</td>
+        </tr>
+
+
+
+         <tr>
+            <td >Ankush</td>
+            <td>BCA</td>
+            <td>103</td>
+        </tr>
+    </table>
+    </main>
+   
+    
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Project</title>
+</head>
+<style>
+    html,body{
+        margin:0px;
+        padding:0px;
+        font-family: 'Times New Roman', Times, serif;
+        box-sizing: border-box;
+        
+    }
+    main{
+        height:100vh;
+        width:100%;
+        background-color: rgb(207, 10, 43);
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    
+       
+        
+    }
+    
+    .image{
+        width:20%;
+        height:25rem;
+
+       
+
+        
+      
+    }
+    img{
+        height:100%;
+        width:100%;
+        object-fit:cover;
+        display: block;
+         border-top-right-radius:30px;
+         border-bottom-right-radius:30px;
+    }
+    .text{
+        width:100%;
+        padding:35px;
+        flex-wrap: wrap;
+       
+    }
+    .content{
+        width:40%;
+        height: 25rem;
+        border-top-left-radius:30px;
+        border-bottom-left-radius:30px;
+        background-color: rgb(245, 218, 237);
+        font-size: 2rem;
+        color:rgb(100, 100, 100);
+        font-weight: 600;
+        box-shadow: black;
+    
+    }
+    .dollar{
+        color:rgb(228, 0, 0);
+    }
+    button{
+        border:none;
+        background-color: rgb(168, 143, 1);
+        color: white;
+        width:80%;
+        font-size:1.5rem;
+        padding:5px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        cursor:pointer;
+
+    }
+    button:hover{
+           background-color: rgb(207, 176, 1);
+    }
+</style>
+<body>
+    <main>
+        <div class="image">
+            <img src="images/strawberry.jpg" alt="">
+
+        </div>
+       <div class="content">
+         <div class="text">
+                 <h3>Order<br>the Smoothie<br> in 
+                just from <span class="dollar">$5 USD</span>!</h3><br>
+                <button>Want it</button>
+         </div>
+       
+
+
+        </div>
+
+    </main>
+    
+</body>
+</html>
