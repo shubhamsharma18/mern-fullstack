@@ -26,15 +26,29 @@
         width:300px;
         
     }   
-    tr:nth-child(even){
+    /* tr:nth-child(even){
 
 background-color: rgb(229, 187, 132);
-    }
+    } */
 </style>
 <body>
     <main>
          <table >
         <caption>Student table</caption>
+
+
+
+<colgroup>
+
+<col span="1" style="background-color:red";>
+
+</colgroup>
+
+
+
+
+
+
         <tr>
             <th>Name</th>
             <th>Class</th>
@@ -42,7 +56,7 @@ background-color: rgb(229, 187, 132);
           
         </tr>
         <tr>
-            <td>Shubham</td>
+            <td rowspan="2" style="background-color: aqua;">Shubham</td>
             <td>BCA</td>
             <td>101</td>
         </tr>
@@ -57,9 +71,22 @@ background-color: rgb(229, 187, 132);
 
 
          <tr>
-            <td >Ankush</td>
-            <td>BCA</td>
+              <td >Ankush</td>
+            <td >BCA</td>
             <td>103</td>
+    
+          
+        </tr>
+
+          <tr>
+            <td >ssss</td>
+            <td>BCA</td>
+            <td>104</td>
+        </tr>
+          <tr>
+            <td >dddd</td>
+            <td>BCA</td>
+            <td>105</td>
         </tr>
     </table>
     </main>
