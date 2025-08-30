@@ -13,12 +13,16 @@
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
-      scroll-behavior: smooth;
+
+            * {
+                scroll-behavior: smooth !important;
+            }
+
         }
 
-        html{
+        html {
             scroll-behavior: smooth;
-           
+
 
         }
 
@@ -31,12 +35,12 @@
         body {
             font-family: Oswald;
             background-color: rgb(48, 48, 48);
-                  scroll-behavior: smooth;
+            scroll-behavior: smooth;
         }
 
         .main {
             min-height: 100vh;
-              background-color: black;
+            background-color: black;
         }
 
 
@@ -99,6 +103,7 @@
         }
 
         #introduction {
+
             height: 100%;
             width: 100%;
             color: rgb(209, 213, 216);
@@ -116,21 +121,38 @@
 
         ul li {
             line-height: 4rem;
-            font-size: larger;
+            font-size: 1.2rem;
         }
-        #achievements{
-          
-            color: aliceblue; 
+
+        #achievements {
+
+            color: aliceblue;
             margin-top: 3rem;
-           padding-left:10px ;
-            
+            padding-left: 10px;
+            background-color: rgb(6, 1, 17);
+
         }
-        #achievements ul{
+
+        #achievements ul {
             line-height: 3rem;
         }
-            #achievements ul img{
-                border-radius: 30%;
-            }
+
+        #achievements ul img {
+            border-radius: 30%;
+        }
+
+        #championship {
+            background: linear-gradient(rgba(90, 90, 90, 0.342), rgba(0, 0, 0, 0.6)),
+                url('images/cena8.webp');
+            background-position: center;
+            background-size: cover;
+
+
+        }
+        #moves{
+            background-color: rgb(22, 34, 34);
+
+        }
     </style>
 
     <div class="main">
@@ -200,34 +222,116 @@
 
 
         </div>
-<div id="achievements">
-     <h1>John Cena - Achievements</h1>
-<ul>
-    <img src="images/cena7.webp" alt="" width="350" style="float: inline-start; padding-right: 15px;" >
-  <p>
-    John Cena has made a remarkable impact in wrestling, Hollywood, and philanthropy. 
-    His journey is filled with numerous records and contributions that highlight his 
-    hard work, determination, and inspiring personality. Below are some of his most 
-    notable achievements:
-  </p>
+        <div id="achievements">
+            <h1>John Cena - Achievements</h1>
+            <ul>
+                <img src="images/cena7.webp" alt="" width="350" style="float: inline-start; padding-right: 15px;">
+                <p>
+                    John Cena has made a remarkable impact in wrestling, Hollywood, and philanthropy.
+                    His journey is filled with numerous records and contributions that highlight his
+                    hard work, determination, and inspiring personality. Below are some of his most
+                    notable achievements:
+                </p>
 
-  
-    <li><b>16-time WWE World Champion</b> – Tied with Ric Flair for the most recognized world title reigns in WWE history.</li>
-    <li><b>5-time United States Champion</b> – Revitalized the title with his open challenge matches.</li>
-    <li><b>4-time Tag Team Champion</b> – Won with partners like Shawn Michaels, Batista, and The Miz.</li>
-    <li><b>2-time Royal Rumble Winner</b> – Secured victories in 2008 and 2013.</li>
-    <li><b>Hollywood Actor</b> – Featured in blockbuster movies like <i>Fast & Furious 9</i>, <i>Bumblebee</i>, and <i>The Suicide Squad</i>.</li>
-    <li><b>Peacemaker Star</b> – Played the lead role in the popular DC series, gaining worldwide appreciation.</li>
-    <li><b>Record with Make-A-Wish</b> – Granted over 650 wishes, the highest by any celebrity.</li>
-    <li><b>Rap Album “You Can’t See Me”</b> – Debut album reached No. 15 on the Billboard 200 chart.</li>
-    <li><b>Humanitarian Work</b> – Recognized globally for his charity, discipline, and inspirational speeches.</li>
-       <li><b>Record with Make-A-Wish</b> – Granted over 650 wishes, the highest by any celebrity.</li>
-    <li><b>Rap Album “You Can’t See Me”</b> – Debut album reached No. 15 on the Billboard 200 chart.</li>
-    <li><b>Humanitarian Work</b> – Recognized globally for his charity, discipline, and inspirational speeches.</li>
+
+                <li><b>16-time WWE World Champion</b> – Tied with Ric Flair for the most recognized world title reigns
+                    in WWE history.</li>
+                <li><b>5-time United States Champion</b> – Revitalized the title with his open challenge matches.</li>
+                <li><b>4-time Tag Team Champion</b> – Won with partners like Shawn Michaels, Batista, and The Miz.</li>
+                <li><b>2-time Royal Rumble Winner</b> – Secured victories in 2008 and 2013.</li>
+                <li><b>Hollywood Actor</b> – Featured in blockbuster movies like <i>Fast & Furious 9</i>,
+                    <i>Bumblebee</i>, and <i>The Suicide Squad</i>.</li>
+                <li><b>Peacemaker Star</b> – Played the lead role in the popular DC series, gaining worldwide
+                    appreciation.</li>
+                <li><b>Record with Make-A-Wish</b> – Granted over 650 wishes, the highest by any celebrity.</li>
+                <li><b>Rap Album “You Can’t See Me”</b> – Debut album reached No. 15 on the Billboard 200 chart.</li>
+                <li><b>Humanitarian Work</b> – Recognized globally for his charity, discipline, and inspirational
+                    speeches.</li>
+                <li><b>Record with Make-A-Wish</b> – Granted over 650 wishes, the highest by any celebrity.</li>
+                <li><b>Rap Album “You Can’t See Me”</b> – Debut album reached No. 15 on the Billboard 200 chart.</li>
+                <li><b>Humanitarian Work</b> – Recognized globally for his charity, discipline, and inspirational
+                    speeches.</li>
+            </ul>
+
+        </div>
+
+
+        <div id="championship" style="padding: 10px;   ">
+            <h1 style="margin-bottom: 30px;">John Cena - Championship Titles</h1>
+            <ul style="color: aliceblue;">
+
+                <li><b>16-time World Champion</b> – 13-time WWE Champion and 3-time World Heavyweight Champion.</li>
+                <li><b>5-time United States Champion</b> – Known for his memorable Open Challenge matches.</li>
+                <li><b>4-time Tag Team Champion</b> – Won alongside legends like Shawn Michaels, Batista, The Miz, and
+                    David Otunga.</li>
+                <li><b>2-time Royal Rumble Winner</b> – Victorious in 2008 and 2013.</li>
+                <li><b>2012 Money in the Bank Winner</b> – First Superstar to unsuccessfully cash in the briefcase.</li>
+                <li><b>WWE Slammy Awards</b> – Multiple-time winner including "Superstar of the Year".</li>
+
+                <li><b>2-time Royal Rumble Winner</b> – Victorious in 2008 and 2013.</li>
+                <li><b>2012 Money in the Bank Winner</b> – First Superstar to unsuccessfully cash in the briefcase.</li>
+                <li><b>WWE Slammy Awards</b> – Multiple-time winner including "Superstar of the Year".</li>
+
+                <p style="line-height: 2.5rem">
+                    John Cena is one of the most decorated WWE Superstars of all time.
+                    His championship victories have made him a global icon in the wrestling industry.
+                    Below is a list of his major titles and champ
+                    John Cena is one of the most decorated WWE Superstars of all time.
+                    His championship victories have made him a global icon in the wrestling industry.
+                    Below is a list of his major titles and champi
+                    John Cena is one of the most decorated WWE Superstars of all time.
+                    His championship victories have made him a global icon in the wrestling industry.
+                    Below is a list of his major titles and champiionship accomplishments:
+                </p>
+            </ul>
+        </div>
+        <div id="moves" style="color: aliceblue; padding: 10px;">
+             <h1>🥊 John Cena – Signature Moves</h1>
+  <ul style="line-height: 1.5rem;">
+
+
+    <img src="images/cena10.webp" alt="" height="270px" style="float:right; border-radius: 20px;">
+    <li>
+      <strong style="color: red;">Attitude Adjustment (AA)</strong>
+      <p>
+        This is Cena’s most famous finishing move, where he lifts his opponent onto his shoulders and slams them down with force. 
+        It has secured him countless victories in his WWE career.
+      </p>
+    </li>
+ <img src="images/cena11.webp" alt="" height="270px" style="float:left; border-radius: 20px; padding-right: 10px;">
+    <li>
+      <strong style="color: red;">STF (Stepover Toehold Facelock)</strong>
+      <p>
+        A powerful submission move where Cena locks the opponent’s legs and pulls back their head, forcing them to tap out or endure immense pain. 
+        This move has won him several championship matches.
+      </p>
+    </li>
+
+    <li>
+      <strong style="color: red;">Five Knuckle Shuffle</strong>
+      <p>
+        Cena taunts his opponent by waving his hand in front of their face before delivering a strong fist drop. 
+        The crowd usually chants along when he performs this move.
+      </p>
+    </li>
+
+    <li>
+      <strong style="color: red;">Shoulder Blocks</strong>
+      <p>
+        Cena uses his explosive power to knock down opponents with consecutive shoulder tackles, often shifting the momentum of the match.
+      </p>
+    </li>
+
+    <li>
+      <strong style="color: red;">Spinning Side Slam</strong>
+      <p>
+        A setup move where Cena grabs his opponent and slams them sideways onto the mat, usually before hitting the Five Knuckle Shuffle.
+      </p>
+    </li>
   </ul>
 
-</div>
 
+        </div>
     </div>
 
 </body>
