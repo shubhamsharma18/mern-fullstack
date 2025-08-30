@@ -1,115 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Cena</title>
 </head>
+
 <body>
     <style>
-        *{
-        margin:0px;
-        padding: 0px;
-       
-    }
-     
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+      scroll-behavior: smooth;
+        }
+
+        html{
+            scroll-behavior: smooth;
+           
+
+        }
+
+
         @font-face {
-            font-family:Oswald;
+            font-family: Oswald;
             src: url(./fonts/Oswald-regular);
         }
-        body{
-            font-family:Oswald;
+
+        body {
+            font-family: Oswald;
             background-color: rgb(48, 48, 48);
-        }
-        .main{
-            min-height:100vh;
+                  scroll-behavior: smooth;
         }
 
-
-nav{
-    height: 70px;
-    width: 100%;
-    position: absolute;
-    top: 0px;
-    color: rgb(255, 255, 255);
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: 1.2rem;
-    background-color:rgba(255, 255, 255, 0.137);
-    backdrop-filter: blur(18px)
-   
-}
-nav a{
- 
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
+        .main {
+            min-height: 100vh;
+              background-color: black;
+        }
 
 
-.intro{
-    height: 100vh;
-    width:100%;
-    
-}
-.imagecontainer{
-    height:100%;
-    width:100%;
+        nav {
+            height: 70px;
+            width: 100%;
+            top: 0px;
 
-    
-}
-img{
-  height:100%;
-  width: 100%;
-  opacity:0.4;
-}
-h1{
-    color:rgb(255, 255, 255);
-    font-size: 50px;
-}
-.heading{
-    height: 100%;
-    width: 100%;
-    position: absolute;
+            color: rgb(255, 255, 255);
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 1.2rem;
+            background-color: rgba(75, 75, 75, 0.055);
+            backdrop-filter: blur(2px);
+            border-bottom: 2.5px solid rgba(134, 133, 133, 0.308);
+        }
 
-      left: 0px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-     
-     
-}
+        nav a {
+            color: aliceblue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgb(219, 205, 0);
+            ;
+            border-bottom: rgb(219, 205, 0);
+
+        }
+
+
+        .intro {
+            height: 100%;
+            width: 100%;
+            background-color: black;
+
+        }
 
 
 
-    </style>
-    
-    <div class="main">
-        <div class="intro">
-            <nav>
-                <a href="#intro"> <li>Introduction</li></a>
-                <a href="#achievements "> <li>Achievements & Awards</li></a>
-               
-               <a href="#championship"> <li>Championship</li></a>
-               <a href="#moves"> <li>Signature Moves</li></a>
-               
-            </nav>
-            <div class="imagecontainer">
-              <div class="heading"><h1>John Cena – The Champ’s Legacy</h1></div>
-                <img src="images/cena3.jpg" alt="">
-               
-                     
-            </div>
+
+
+        h1 {
+            color: rgb(255, 255, 255);
+            font-size: 50px;
+        }
+
+        .heading {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+
+            left: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        #introduction {
+            height: 100%;
+            width: 100%;
+            color: rgb(209, 213, 216);
+            background-color: black;
+            overflow: hidden;
+            padding-left: 10px;
+        }
+
+        ul {
+            height: 100%;
+            width: 100%;
+            list-style: none;
+
+        }
+
+        ul li {
+            line-height: 4rem;
+            font-size: larger;
+        }
+        #achievements{
           
+            color: aliceblue; 
+            margin-top: 3rem;
+           padding-left:10px ;
+            
+        }
+        #achievements ul{
+            line-height: 3rem;
+        }
+            #achievements ul img{
+                border-radius: 30%;
+            }
+    </style>
+
+    <div class="main">
+        <div class="intro"
+            style="background-image: url(images/cena6.jpg); height:100vh; background-size:cover; background-position:center; position:relative; opacity: 0.8;">
+            <nav>
+                <a href="#introduction">Introduction
+                </a>
+                <a href="#achievements ">
+                    achievements
+                </a>
+
+                <a href="#championship">
+                    championship
+                </a>
+                <a href="#moves">moves
+                </a>
+
+            </nav>
 
 
 
         </div>
+        <div id="introduction">
+            <h1>Introduction</h1>
+            <ul style="list-style:lower-alpha;">
+                <img src="images/cena5.webp" alt="" height="700" style="float: right; color: aliceblue; padding:80px;">
+
+                <li>Born: April 23, 1977, in West Newbury, Massachusetts Born: April 23, 1977, in West Newbury,
+                    Massachusetts Born: April 23, 1977, in West Newbury, Massachusetts Born: April 23, 1977, in West
+                    Newbury, Massachusetts</li>
+                <li>Profession: Professional wrestler, actor, television presenter, and rapper
+                    Profession: Professional wrestler, actor, television presenter, and rapper
+                    Profession: Professional wrestler, actor, television presenter, and rapper
+                </li>
+                <li>Featured in movies like Fast & Furious 9, Bumblebee, The Suicide Squad</li>
+                <li>Known for strength, charisma, and never-give-up attitude</li>
+                <li>Famous for his catchphrase “You Can’t See Me” Famous for his catchphrase “You Can’t See Me” Famous
+                    for his catchphrase “You Can’t See Me”</li>
+                <li>16-time WWE World Champion 16-time WWE World Champion 16-time WWE World Champion16-time WWE World
+                    Champion16-time WWE World Champion</li>
+                <li>Starred in the DC series Peacemaker Starred in the DC series Peacemaker Starred in the DC series
+                    PeacemakerStarred in the DC series PeacemakerStarred in the DC series Peacemaker</li>
+                <li>Holds the record for granting 650+ wishes with the Make-A-Wish Foundation Holds the record for
+                    granting 650+ wishes with the Make-A-Wish FoundationHolds the record for granting 650+ wishes with
+                    the Make-A-Wish FoundationHolds the record for granting 650+ wishes with the Make-A-Wish Foundation
+                </li>
+                <li>
+                    Role Model: Dedicated to fitness, hard work, and positivity
+                </li>
 
 
+            </ul>
+            <p style="line-height: 2rem;">John Felix Anthony Cena, popularly known as John Cena, is an American
+                professional wrestler, actor, television presenter, and rapper who has become a global icon of
+                entertainment and inspiration. Born on April 23, 1977, in West Newbury, Massachusetts, Cena first gained
+                fame through World Wrestling Entertainment (WWE), where he went on to become a 16-time world champion.
+                Known for his incredible strength, charisma, and his famous catchphrase “You Can’t See Me,” he quickly
+                rose to the top and earned a place among the greatest superstars in wrestling history. His never-give-up
+                attitude and connection with fans helped him stand out, making him one of the most loved and respected
+                athletes of his generation. Beyond wrestling, Cena successfully transitioned into Hollywood, acting in
+                blockbuster movies such as Fast & Furious 9, Bumblebee, The Suicide Squad, and the popular DC series
+                Peacemaker, where his performance was widely appreciated</p>
+
+
+
+
+
+        </div>
+<div id="achievements">
+     <h1>John Cena - Achievements</h1>
+<ul>
+    <img src="images/cena7.webp" alt="" width="350" style="float: inline-start; padding-right: 15px;" >
+  <p>
+    John Cena has made a remarkable impact in wrestling, Hollywood, and philanthropy. 
+    His journey is filled with numerous records and contributions that highlight his 
+    hard work, determination, and inspiring personality. Below are some of his most 
+    notable achievements:
+  </p>
+
+  
+    <li><b>16-time WWE World Champion</b> – Tied with Ric Flair for the most recognized world title reigns in WWE history.</li>
+    <li><b>5-time United States Champion</b> – Revitalized the title with his open challenge matches.</li>
+    <li><b>4-time Tag Team Champion</b> – Won with partners like Shawn Michaels, Batista, and The Miz.</li>
+    <li><b>2-time Royal Rumble Winner</b> – Secured victories in 2008 and 2013.</li>
+    <li><b>Hollywood Actor</b> – Featured in blockbuster movies like <i>Fast & Furious 9</i>, <i>Bumblebee</i>, and <i>The Suicide Squad</i>.</li>
+    <li><b>Peacemaker Star</b> – Played the lead role in the popular DC series, gaining worldwide appreciation.</li>
+    <li><b>Record with Make-A-Wish</b> – Granted over 650 wishes, the highest by any celebrity.</li>
+    <li><b>Rap Album “You Can’t See Me”</b> – Debut album reached No. 15 on the Billboard 200 chart.</li>
+    <li><b>Humanitarian Work</b> – Recognized globally for his charity, discipline, and inspirational speeches.</li>
+       <li><b>Record with Make-A-Wish</b> – Granted over 650 wishes, the highest by any celebrity.</li>
+    <li><b>Rap Album “You Can’t See Me”</b> – Debut album reached No. 15 on the Billboard 200 chart.</li>
+    <li><b>Humanitarian Work</b> – Recognized globally for his charity, discipline, and inspirational speeches.</li>
+  </ul>
+
+</div>
 
     </div>
-    
+
 </body>
+
 </html>
