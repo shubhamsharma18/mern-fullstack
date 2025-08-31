@@ -41,6 +41,7 @@
         .main {
             min-height: 100vh;
             background-color: black;
+            overflow:hidden;
         }
 
 
@@ -120,7 +121,7 @@
         }
 
         ul li {
-            line-height: 4rem;
+            line-height: 3rem;
             font-size: 1.2rem;
         }
 
@@ -137,9 +138,10 @@
             line-height: 3rem;
         }
 
-        #achievements ul img {
-            border-radius: 30%;
+        #achievements img {
+            border: 2px solid rgb(255, 0, 0);
         }
+
 
         #championship {
             background: linear-gradient(rgba(90, 90, 90, 0.342), rgba(0, 0, 0, 0.6)),
@@ -149,9 +151,31 @@
 
 
         }
-        #moves{
+
+        #moves {
             background-color: rgb(22, 34, 34);
 
+        }
+
+        #moves li {
+            margin-bottom: 2.5rem;
+        }
+
+        #moves img {
+            border: 2px solid rgb(255, 255, 255);
+        }
+
+        .end {
+            height: 100%;
+            width: 100%;
+           
+
+
+        }
+
+        .end img {
+
+            width: 100%;
         }
     </style>
 
@@ -179,7 +203,7 @@
         <div id="introduction">
             <h1>Introduction</h1>
             <ul style="list-style:lower-alpha;">
-                <img src="images/cena5.webp" alt="" height="700" style="float: right; color: aliceblue; padding:80px;">
+                <img src="images/cena5.webp" alt="" height="700" style="  float: right; color: aliceblue;">
 
                 <li>Born: April 23, 1977, in West Newbury, Massachusetts Born: April 23, 1977, in West Newbury,
                     Massachusetts Born: April 23, 1977, in West Newbury, Massachusetts Born: April 23, 1977, in West
@@ -223,24 +247,30 @@
 
         </div>
         <div id="achievements">
-            <h1>John Cena - Achievements</h1>
+            <h1 style="margin-bottom: 10px;">John Cena - Achievements</h1>
+            <img src="images/cena7.webp" alt="" width="400" style="float: left; margin-right: 15px; ">
+
+
+            <p>
+                John Cena has made a remarkable impact in wrestling, Hollywood, and philanthropy.
+                His journey is filled with numerous records and contributions that highlight his
+                hard work, determination, and inspiring personality. Below are some of his most
+                notable achievements:
+                John Cena has made a remarkable impact in wrestling, Hollywood, and philanthropy.
+                His journey is filled with numerous records and contributions that highlight his
+                hard work, determination, and inspiring personality. Below are some of his most
+                notable achievements:
+            </p>
+
             <ul>
-                <img src="images/cena7.webp" alt="" width="350" style="float: inline-start; padding-right: 15px;">
-                <p>
-                    John Cena has made a remarkable impact in wrestling, Hollywood, and philanthropy.
-                    His journey is filled with numerous records and contributions that highlight his
-                    hard work, determination, and inspiring personality. Below are some of his most
-                    notable achievements:
-                </p>
-
-
                 <li><b>16-time WWE World Champion</b> – Tied with Ric Flair for the most recognized world title reigns
                     in WWE history.</li>
                 <li><b>5-time United States Champion</b> – Revitalized the title with his open challenge matches.</li>
                 <li><b>4-time Tag Team Champion</b> – Won with partners like Shawn Michaels, Batista, and The Miz.</li>
                 <li><b>2-time Royal Rumble Winner</b> – Secured victories in 2008 and 2013.</li>
                 <li><b>Hollywood Actor</b> – Featured in blockbuster movies like <i>Fast & Furious 9</i>,
-                    <i>Bumblebee</i>, and <i>The Suicide Squad</i>.</li>
+                    <i>Bumblebee</i>, and <i>The Suicide Squad</i>.
+                </li>
                 <li><b>Peacemaker Star</b> – Played the lead role in the popular DC series, gaining worldwide
                     appreciation.</li>
                 <li><b>Record with Make-A-Wish</b> – Granted over 650 wishes, the highest by any celebrity.</li>
@@ -272,7 +302,7 @@
                 <li><b>2012 Money in the Bank Winner</b> – First Superstar to unsuccessfully cash in the briefcase.</li>
                 <li><b>WWE Slammy Awards</b> – Multiple-time winner including "Superstar of the Year".</li>
 
-                <p style="line-height: 2.5rem">
+                <p style="line-height: 2rem">
                     John Cena is one of the most decorated WWE Superstars of all time.
                     His championship victories have made him a global icon in the wrestling industry.
                     Below is a list of his major titles and champ
@@ -285,52 +315,95 @@
                 </p>
             </ul>
         </div>
+
+
         <div id="moves" style="color: aliceblue; padding: 10px;">
-             <h1>🥊 John Cena – Signature Moves</h1>
-  <ul style="line-height: 1.5rem;">
+            <h1>🥊 John Cena – Signature Moves</h1>
+            <ul style="line-height: 1.5rem;">
 
 
-    <img src="images/cena10.webp" alt="" height="270px" style="float:right; border-radius: 20px;">
-    <li>
-      <strong style="color: red;">Attitude Adjustment (AA)</strong>
-      <p>
-        This is Cena’s most famous finishing move, where he lifts his opponent onto his shoulders and slams them down with force. 
-        It has secured him countless victories in his WWE career.
-      </p>
-    </li>
- <img src="images/cena11.webp" alt="" height="270px" style="float:left; border-radius: 20px; padding-right: 10px;">
-    <li>
-      <strong style="color: red;">STF (Stepover Toehold Facelock)</strong>
-      <p>
-        A powerful submission move where Cena locks the opponent’s legs and pulls back their head, forcing them to tap out or endure immense pain. 
-        This move has won him several championship matches.
-      </p>
-    </li>
+                <img src="images/cena10.webp" alt="" height="230px" style="float:right; border-radius: 20px;">
+                <li>
+                    <strong style="color: red;">Attitude Adjustment (AA)</strong>
+                    <p>
+                        This is Cena’s most famous finishing move, where he lifts his opponent onto his shoulders and
+                        slams them down with force.
+                        It has secured him countless victories in his WWE career.
+                        This is Cena’s most famous finishing move, where he lifts his opponent onto his shoulders and
+                        slams them down with force.
+                        It has secured him countless victories in his WWE career.
 
-    <li>
-      <strong style="color: red;">Five Knuckle Shuffle</strong>
-      <p>
-        Cena taunts his opponent by waving his hand in front of their face before delivering a strong fist drop. 
-        The crowd usually chants along when he performs this move.
-      </p>
-    </li>
+                    </p>
+                </li>
+                <img src="images/cena11.webp" alt="" height="230px"
+                    style="float:left; border-radius: 20px; margin-right:15px">
+                <li>
+                    <strong style="color: red;">STF (Stepover Toehold Facelock)</strong>
+                    <p>
+                        A powerful submission move where Cena locks the opponent’s legs and pulls back their head,
+                        forcing them to tap out or endure immense pain.
+                        This move has won him several championship matches.
+                        A powerful submission move where Cena locks the opponent’s legs and pulls back their head,
+                        forcing them to tap out or endure immense pain.
+                        This move has won him.
+                        A powerful submission move where Cena locks the opponent’s legs and pulls back their head,
+                        forcing them to tap out or endure immense pain.
+                        This move has won him/
+                    </p>
+                </li>
 
-    <li>
-      <strong style="color: red;">Shoulder Blocks</strong>
-      <p>
-        Cena uses his explosive power to knock down opponents with consecutive shoulder tackles, often shifting the momentum of the match.
-      </p>
-    </li>
+                <li>
+                    <strong style="color: red;">Five Knuckle Shuffle</strong>
+                    <img src="https://www.wwe.com/f/styles/og_image/public/2019/01/wm26_03282010jg_3682--fa7b5cad71c79f2c086c88cffc748d35.jpg"
+                        alt="" height="230px" style="float:right; border-radius: 20px; margin-right: 15px;">
+                    <p>
+                        Cena taunts his opponent by waving his hand in front of their face before delivering a strong
+                        fist drop.
+                        The crowd usually chants along when he performs this move.
+                        Cena taunts his opponent by waving his hand in front of their face before delivering a strong
+                        fist drop.
+                        The crowd usually chants
+                        Cena taunts his opponent by waving his hand in front of their face before delivering a strong
+                        fist drop.
+                        The crowd usually chants
+                    </p>
+                </li>
 
-    <li>
-      <strong style="color: red;">Spinning Side Slam</strong>
-      <p>
-        A setup move where Cena grabs his opponent and slams them sideways onto the mat, usually before hitting the Five Knuckle Shuffle.
-      </p>
-    </li>
-  </ul>
+                <li>
+                    <strong style="color: red;">Shoulder Blocks</strong>
+                    <img src="https://i.pinimg.com/736x/53/11/99/53119922959475f34a83990de36e26b8.jpg" alt=""
+                        height="230px" style="float:left; border-radius: 20px; margin-right:15px">
+                    <p>
+                        Cena uses his explosive power to knock down opponents with consecutive shoulder tackles, often
+                        shifting the momentum of the match.
+                        Cena uses his explosive power to knock down opponents with consecutive shoulder tackles, often
+                        shifting the momentum of the match
+                        Cena uses his explosive power to knock down opponents with consecutive shoulder tackles, often
+                        shifting the momentum of the match
+                    </p>
+                </li>
+
+                <li>
+                    <strong style="color: red;">Spinning Side Slam</strong>
+                    <img src="https://www.wwe.com/f/styles/wwe_16_9_xl/public/wysiwyg/image/2013/08/5moves3.jpg" alt=""
+                        height="230px" style="float:right; border-radius: 20px; margin-right:15px">
+
+                    <p>
+                        A setup move where Cena grabs his opponent and slams them sideways onto the mat, usually before
+                        hitting the Five Knuckle Shuffle.
+                        A setup move where Cena grabs his opponent and slams them sideways onto the mat, usually before
+                        hitting the Five Knuckle Shuffl
+                        A setup move where Cena grabs his opponent and slams them sideways onto the mat, usually before
+                        hitting the Five Knuckle Shuffl
+
+                    </p>
+                </li>
+            </ul>
 
 
+        </div>
+        <div class="end">
+            <img src="images/image.png" alt="">
         </div>
     </div>
 
