@@ -11,9 +11,10 @@
 </head>
 <style>
     @font-face {
-        font-family:font1 ;
+        font-family: font1;
         src: url(fonts/StoryScript-Regular.ttf);
     }
+<<<<<<< HEAD
 *{
     padding: 0px;
     margin:0px;
@@ -40,40 +41,92 @@
     px 7px 20px rgb(0, 0, 0);
 }
 .imgcontainer{
+=======
+>>>>>>> 5089b91cffc7872b69c82aa774c4643c9e03c2e4
 
-    width:100%;
-    object-fit: cover;
-    object-position: center;
-    overflow: hidden;
+    * {
+        padding: 0px;
+        margin: 0px;
+        font-family: font1;
+        box-sizing: border-box;
+    }
 
+    .main {
+        width: 100%;
+        min-height: 100vh;
+        background: linear-gradient(45deg, rgb(154, 2, 214), rgb(206, 3, 179), orange, rgb(250, 234, 9));
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+flex-wrap: wrap;
+        align-items: center;
+        overflow: hidden;
+    }
+#tick{
+    color:rgb(1, 72, 138)
 }
-.imgcontainer img{
-    width: 100%;
-    object-position: center;
-      object-fit: cover;
-}
-.head{
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    gap: 5px;
-}
-.content{
-    width: 100%;
-   padding: 10px;
-   
-}
+    .post {
+        margin: 30px;
+        background-color: aliceblue;
+        min-height: 25rem;
+        width: 18rem;
+        box-shadow: 13px 16px 20px rgb(0, 0, 0);
+    }
 
+    .imgcontainer {
+
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        overflow: hidden;
+
+    }
+
+    .imgcontainer img {
+        width: 100%;
+        object-position: center;
+        object-fit: cover;
+    }
+
+    .head {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        gap: 5px;
+    }
+
+    .content {
+        width: 100%;
+        padding: 10px;
+
+    }
+
+    #heart {
+        transition: 0.3 ease-in;
+
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    .toggle:checked+#heart {
+        color: red;
+    }
+    #profile{
+        font-size:20px;
+    }
 
 </style>
+
 <body>
     <div class="main">
 
         <div class="post">
             <div class="head">
-               <i class="fa-solid fa-circle-user"></i> 
-               <p>Shubham_sharma</p>
-               <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-user" id="profile"></i>
+                <p>khabib_19</p>
+                <i class="fa-solid fa-circle-check" id="tick"></i>
             </div>
             <div class="imgcontainer">
                 <img src="images/khabib.jpg" alt="">
@@ -82,17 +135,22 @@
             </div>
             <div class="content">
                 <div class="icons">
-                    <i class="fa-thin fa-heart"></i>
+                    <label>
+                        <input type="checkbox" class="toggle">
+                        <i class="fa-solid fa-heart" id="heart"></i>
+
+                    </label>
+
                     <i class="fa-regular fa-comment"></i>
                     <i class="fa-regular fa-paper-plane"></i>
                     <i class="fa-regular fa-bookmark"></i>
-                   
+
                 </div>
                 <div class="text">
                     <p><b>liked by shubham</b>and others</p>
                     <p>Khabib undisputed champion in the world 29-0</p>
-                         <p>khabib looser 🤣🤣🤣 </p>
-                              <p>Khabib undisputed champion in the world against brock lesnar</p>
+                    <p>khabib looser 🤣🤣🤣 </p>
+                    <p>Khabib undisputed champion in the world against brock lesnar</p>
                     <p>6 hours ago</p>
 
                 </div>
@@ -100,7 +158,42 @@
             </div>
         </div>
 
+        <div class="post">
+            <div class="head">
+                <i class="fa-solid fa-circle-user" id="profile"></i>
+                <p>virat.kohli</p>
+                <i class="fa-solid fa-circle-check" id="tick"></i>
+            </div>
+            <div class="imgcontainer">
+                <img src="https://static.toiimg.com/thumb/msid-121071772,imgsize-95934,width-400,resizemode-4/Indias-Virat-Kohli-celebrates-his-century-on-the-third-day-of-the-first-cricket-.jpg"
+                    alt="">
 
+
+            </div>
+            <div class="content">
+                <div class="icons">
+                    <label>
+                        <input type="checkbox" class="toggle">
+                        <i class="fa-solid fa-heart" id="heart"></i>
+
+                    </label>
+
+                    <i class="fa-regular fa-comment"></i>
+                    <i class="fa-regular fa-paper-plane"></i>
+                    <i class="fa-regular fa-bookmark"></i>
+
+                </div>
+                <div class="text">
+                    <p><b>liked by shubham</b>and others</p>
+                    <p>Khabib undisputed champion in the world 29-0</p>
+                    <p>khabib looser 🤣🤣🤣 </p>
+                    <p>Khabib undisputed champion in the world against brock lesnar</p>
+                    <p>6 hours ago</p>
+
+                </div>
+
+            </div>
+        </div>
 
     </div>
 
