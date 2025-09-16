@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paralax2</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+
+        }
+
+     
+.main{
+    height: 100vh;
+    overflow-x: hidden;
+            overflow-y: auto;
+            perspective: 10px;
+            
+}
+     
+        .head{
+            position:relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height:100%;
+            transform-style: preserve-3d;
+            z-index:-1;
+        }
+        .back{
+            transform:translateZ(-23px) scale(3.5);
+         
+           
+
+        }
+        .front img{
+            height:100px;
+        }
+        .front{
+            transform:translateZ(0px);
+                      
+        }
+        .front,.back{
+            position:absolute;
+            height:100%;
+            width:100%;
+            object-fit:cover;
+
+        }
+        section{
+            background-color: black;
+            color:white;
+            height:100%;
+        }
+    </style>
+</head>
+
+<body>
+   <div class="main">
+        <div class="head">
+            <img src="images/nature.png" alt="" class="back">
+            <img src="images/theman.png" alt="" class="front">
+        </div>
+        <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo amet sed eveniet ratione similique
+            nisi. Unde vero excepturi dolores cupiditate nulla earum est mollitia a, recusandae inventore dolore et?
+            Exercitationem, ducimus porro explicabo sed dolor corrupti cupiditate unde quod autem culpa repellat debitis
+            alias ipsam obcaecati earum iste nam! Aliquid necessitatibus ipsa delectus a qui beatae ullam, nisi
+            quisquam?
+            Tempore laudantium veritatis minus numquam nemo illo, assumenda, similique libero mollitia veniam autem quos
+            sequi velit tempora vero. Fugiat quisquam voluptatem ad a numquam expedita est officiis dolore, deserunt
+            aliquam!
+            Vitae alias doloribus in quod totam eaque dolor eius vel mollitia ipsam pariatur sapiente facilis, numquam
+            quaerat quos! Minus rerum tenetur omnis iste sed distinctio optio repellendus maxime impedit. Libero.
+            Sint perspiciatis vero expedita beatae recusandae alias dolorum at praesentium quo libero molestias porro
+            eos quidem iste excepturi nisi distinctio accusamus natus ut assumenda maiores, blanditiis a. Quod, fugit
+            reprehenderit.
+            Aperiam amet eaque animi totam similique. Deserunt, aut ipsum qui, aliquam atque labore doloremque at quas
+            nihil odio error. Neque magnam labore, voluptates aperiam obcaecati qui. Pariatur minus blanditiis
+            inventore.
+            Magni repudiandae dolore quia consequuntur. Laborum sapiente possimus at iste consequatur et, similique qui,
+            molestias ducimus tenetur temporibus quod adipisci, ipsa dolorem esse fugiat officiis labore minima. Autem,
+            explicabo fugit!
+            Amet saepe nesciunt placeat earum reiciendis similique sequi! Possimus, cum nostrum culpa dolor adipisci
+            necessitatibus voluptatem. Illum autem, nobis impedit saepe voluptas voluptatibus, tenetur, reprehenderit
+            dolorem labore ullam repudiandae officia!
+            Ipsam voluptatum eaque natus enim itaque reiciendis libero accusantium? Animi laborum voluptates vel quasi
+            asperiores commodi cupiditate expedita, consequuntur corrupti libero nesciunt sapiente necessitatibus in
+            iusto iure odio modi. Beatae.
+            Non a doloribus similique consequuntur voluptas libero. Officiis obcaecati asperiores incidunt aut
+            consequuntur esse voluptatum eaque exercitationem error nulla itaque corporis quo at, accusamus excepturi,
+            temporibus, placeat quia nisi sed!
+            Suscipit a molestias, facere reiciendis aspernatur sequi? Saepe itaque tempore fugit architecto vitae
+            praesentium provident enim in ratione aspernatur. Similique praesentium aspernatur laborum voluptas, vitae
+            officiis. Velit quidem fuga totam!
+            Quis eius molestiae sint praesentium quas ipsa totam ducimus sit nam reiciendis, repellendus consectetur
+            unde! Iste harum eum ea nisi fuga quos molestiae voluptatum provident, molestias necessitatibus et sint
+            veniam?
+            Nam autem, repudiandae ab id laboriosam similique ullam cum officiis et nostrum obcaecati explicabo,
+            quisquam tenetur fuga non aliquid esse totam. Deleniti optio recusandae ad necessitatibus hic, temporibus
+            velit modi.
+            Dolor iure veniam nesciunt esse mollitia sint odit quidem delectus magni rerum, id fugiat tempora eius
+            provident odio quis. Veritatis mollitia blanditiis iste quisquam veniam totam illo perferendis quos?
+            Perferendis.
+            Quasi, sapiente. Cupiditate debitis doloribus vel aut officiis expedita eligendi similique minima quo
+            explicabo rerum voluptates, facilis saepe, perferendis praesentium consectetur sapiente, commodi corporis
+            sit voluptatem! Quidem omnis corporis maxime.</section>
+           </div>
+</body>
+
+</html>
