@@ -12,59 +12,64 @@
 
         }
 
-     
-.main{
-    height: 100vh;
-    overflow-x: hidden;
+
+        .main {
+            height: 100vh;
+            overflow-x: hidden;
             overflow-y: auto;
             perspective: 10px;
-            
-}
-     
-        .head{
-            position:relative;
+            background-color: black;
+
+        }
+
+        .head {
+            position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
-            height:100%;
+            height: 100%;
             transform-style: preserve-3d;
-            z-index:-1;
+            z-index: -1;
         }
-        .back{
-            transform:translateZ(-23px) scale(3.5);
-         
-           
+
+        .back {
+            transform: translateZ(-23px) scale(3.5);
+
+
 
         }
-        .front img{
-            height:100px;
-        }
-        .front{
-            transform:translateZ(0px);
-                      
-        }
-        .front,.back{
-            position:absolute;
-            height:100%;
-            width:100%;
-            object-fit:cover;
+
+
+        .front {
+            transform: translateZ(0px);
 
         }
-        section{
+
+        .front,
+        .back {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+
+        }
+
+        section {
             background-color: black;
-            color:white;
-            height:100%;
+            color: white;
+            height: 100%;
         }
     </style>
 </head>
 
 <body>
-   <div class="main">
+    <div class="main">
         <div class="head">
             <img src="images/nature.png" alt="" class="back">
             <img src="images/theman.png" alt="" class="front">
         </div>
-        <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo amet sed eveniet ratione similique
+        <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo amet sed eveniet ratione
+            similique
             nisi. Unde vero excepturi dolores cupiditate nulla earum est mollitia a, recusandae inventore dolore et?
             Exercitationem, ducimus porro explicabo sed dolor corrupti cupiditate unde quod autem culpa repellat debitis
             alias ipsam obcaecati earum iste nam! Aliquid necessitatibus ipsa delectus a qui beatae ullam, nisi
@@ -107,7 +112,7 @@
             Quasi, sapiente. Cupiditate debitis doloribus vel aut officiis expedita eligendi similique minima quo
             explicabo rerum voluptates, facilis saepe, perferendis praesentium consectetur sapiente, commodi corporis
             sit voluptatem! Quidem omnis corporis maxime.</section>
-           </div>
+    </div>
 </body>
 
 </html>
