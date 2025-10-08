@@ -46,7 +46,6 @@
         background-color: bisque;
         position: relative;
         z-index: 1;
-        overflow: auto;
         color:bisque;
         text-align: center;
         padding:3px 3px;
@@ -59,12 +58,13 @@
         content: "";
         position: absolute;
         background-color: blueviolet;
-        width: 0px;
+    width:0px;
+
         top: 0px;
         bottom: 0px;
         left: 0px;
         transform: scaleX(0);
-        transform-origin: left;
+        transform-origin: left;  
         transition: all 1s;
         z-index: -1;
 
@@ -72,7 +72,8 @@
 
     .box:hover::before {
         transform: scaleX(1);
-        width: 100%;
+        width:100%;
+
         background-color: blueviolet;
     }
 </style>
