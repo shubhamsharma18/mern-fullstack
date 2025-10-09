@@ -17,7 +17,7 @@ html,body{
    
 }
 nav{
-    height:90px;
+ 
     background-color: rgb(255, 255, 255);
     display:flex;
     align-items:center;
@@ -26,10 +26,20 @@ nav{
  
  
 }
+@media (max-width:680px){
+    nav{
+        display:flex;
+        flex-direction:column;
+    }
+}
 
 .logo{
     display:flex;
    align-items: center;
+}
+.logo img{
+    position:relative;
+    left:20px;
 }
 .links{
     display:Flex;
@@ -57,7 +67,7 @@ nav{
 .left{
     display:flex;
     flex-direction: column;
-   
+
     width:40%;
     /* border:2px solid red; */
     padding:5rem 30px;
@@ -96,6 +106,14 @@ nav{
 
     
     /* border:2px solid green;*/
+}
+.head{
+    position:relative;
+    bottom:-120px;
+font-size:4rem;
+color:rgba(124, 123, 123, 0.849);
+white-space: nowrap;
+left:0px;
 }
 .img-container img{
     height:100%;
