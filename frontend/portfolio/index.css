@@ -13,18 +13,20 @@ html,body{
 .main{
     height:100vh;
     width:100%;
+ 
    
 }
 nav{
-    height:100px;
+    height:90px;
     background-color: rgb(255, 255, 255);
     display:flex;
     align-items:center;
     justify-content: space-between;
     padding:10px 40px;
-    border-bottom:0.3px solid black;
-    box-shadow:3px 3px 12px rgba(0, 0, 0, 0.329)
+ 
+ 
 }
+
 .logo{
     display:flex;
    align-items: center;
@@ -42,23 +44,88 @@ nav{
 }
 .hero-section{
     height:100%;
-    border:2px solid green;
+    /* border:2px solid green; */
     display:flex;
     justify-content:center;
+    gap:3rem;
+    padding: 10px;
+    background-color: rgb(17, 17, 17);
+    color: aliceblue;
+
     
 }
 .left{
     display:flex;
     flex-direction: column;
-    
-    width:50%;
-    border:2px solid red;
+   
+    width:40%;
+    /* border:2px solid red; */
     padding:5rem 30px;
-    gap:10px;
+    gap:30px;
+}
+.name{
+     white-space:nowrap;
+}
+.role{
+    color:rgb(228, 105, 5);
+    font-size: 19px;
 }
 .right{
-    border:2px solid yellow;
-    width:50%;
+    /* border:2px solid yellow; */
+    width:40%;
      padding:5rem 30px;
+     display:flex;
+     justify-content: center;
 
+}
+.img-container{
+    height:350px;
+    width: 250px;
+    background-color: aliceblue;
+    padding: 30px 20px;
+    border-radius: 15px;
+ 
+ filter: drop-shadow(5px 5px 30px white);
+
+   animation-name: myAnimation;
+  animation-duration: 2s;           /* duration */
+  animation-iteration-count: infinite; /* ya 3 agar 3 baar chalana ho */
+  animation-direction: alternate;  /* reverse every other cycle */
+  animation-timing-function: ease-in-out;
+  transform-origin: center;
+
+    
+    /* border:2px solid green;*/
+}
+.img-container img{
+    height:100%;
+    width:100%;
+    object-fit:cover;
+
+
+}
+.btn button{
+    font-size:16px;
+    padding:10px 15px;
+    border:none;
+    background-color: rgb(235, 65, 94);
+    color:white;
+    font-style: bold;
+    font-weight:600;
+}
+/* .img-container:hover{
+    transform:scale(1.09);
+    transition: all 1s;
+    transition-duration:1s;
+} */
+@keyframes myAnimation{
+0%{
+     transform:scale(1.03);
+   
+}
+
+100%{
+     transform:scale(1.09);
+    
+}
 }
