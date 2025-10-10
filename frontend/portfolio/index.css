@@ -6,6 +6,7 @@
     padding:0px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-sizing:border-box;
+    transition:all 0.5s ease;
 }
 html,body{
     height:100%;
@@ -133,7 +134,7 @@ nav{
     position:relative;
   bottom:13rem;
 font-size:4rem;
-color:rgba(179, 179, 179, 0.336);
+color:rgba(179, 179, 179, 0.945);
 
 
 }
@@ -219,4 +220,20 @@ button:hover{
     .head{
         bottom: 0px;;
     }
+}
+
+
+/* Projects sections */
+
+
+.project-section{
+    height:100vh;
+    width:100%;
+    overflow-x:hidden;
+    background-color: rgb(235, 144, 182);
+}
+.project-heading{
+    width:100%;
+    color:rgb(255, 11, 52);
+    font-size:2rem;
 }
