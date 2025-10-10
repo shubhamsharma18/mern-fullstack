@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Grechen+Fuemen&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap');
+
 *{
     margin:0px;
     padding:0px;
@@ -7,13 +10,14 @@
 html,body{
     height:100%;
     width:100%;
-    overflow:hidden;
+    overflow-x:hidden;
 
 }
 .main{
     height:100vh;
     width:100%;
- 
+   border-bottom: 0.1px solid rgb(61, 61, 61);
+
    
 }
 nav{
@@ -22,6 +26,7 @@ nav{
     display:flex;
     align-items:center;
     justify-content: space-between;
+    border-bottom: 0.3px solid black;
     padding:10px 40px;
  
  
@@ -53,21 +58,21 @@ nav{
     color:black;
 }
 .hero-section{
-    height:100%;
+    min-height:100%;
     /* border:2px solid green; */
     display:flex;
     justify-content:center;
     gap:3rem;
     padding: 10px;
-    background-color: rgb(17, 17, 17);
-    color: aliceblue;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 
     
 }
 .left{
     display:flex;
     flex-direction: column;
-
+ 
     width:40%;
     /* border:2px solid red; */
     padding:5rem 30px;
@@ -75,10 +80,26 @@ nav{
 }
 .name{
      white-space:nowrap;
+ 
 }
+.name h1{
+         font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+}
+.text p{
+          font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .role{
     color:rgb(228, 105, 5);
-    font-size: 19px;
+    font-size: 26px;
+    font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .right{
     /* border:2px solid yellow; */
@@ -91,9 +112,10 @@ nav{
 .img-container{
     height:350px;
     width: 250px;
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     padding: 30px 20px;
     border-radius: 15px;
+    border: 0.3px solid black;
  
  filter: drop-shadow(5px 5px 30px white);
 
@@ -109,11 +131,11 @@ nav{
 }
 .head{
     position:relative;
-    bottom:-120px;
+  bottom:13rem;
 font-size:4rem;
-color:rgba(124, 123, 123, 0.849);
-white-space: nowrap;
-left:0px;
+color:rgba(179, 179, 179, 0.336);
+
+
 }
 .img-container img{
     height:100%;
@@ -122,28 +144,79 @@ left:0px;
 
 
 }
-.btn button{
+ .btn button{
+position:relative;
+  z-index: 1;  
     font-size:16px;
     padding:10px 15px;
     border:none;
-    background-color: rgb(235, 65, 94);
-    color:white;
+     background-color:rgba(189, 189, 189, 0.425);
+     border: 0.1px solid black;
+    color:rgb(12, 12, 12);
     font-style: bold;
     font-weight:600;
 }
-/* .img-container:hover{
-    transform:scale(1.09);
+
+button::before{
+    content:"";
+    position:absolute;
+    background-color:whitesmoke;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    top:0px;
+    width:0px;
+    transform: scaleX(0);
+    transform-origin: left;
     transition: all 1s;
-    transition-duration:1s;
-} */
+    z-index:-1;
+    color: rgb(255, 255, 255);
+
+}
+button:hover::before{
+    transform: scaleX(1);
+    width: 100%;
+    background-color:rgb(223, 87, 8);
+        color: rgb(255, 255, 255);
+} 
+
+button:hover{
+      transform: scale(1.1);
+      transition: all 1s;
+          color: rgb(255, 255, 255);
+}
+
 @keyframes myAnimation{
 0%{
      transform:scale(1.03);
+     
    
 }
 
 100%{
      transform:scale(1.09);
+     box-shadow: 8px 10px 15px black;
     
 }
+}
+
+@media (max-width:750px){
+
+    .hero-section{
+        flex-direction: column;
+        padding-top: 3rem;
+        align-items: center;
+    }
+    .left{
+        width: 100%;
+        padding: 10px 0px;
+        text-align: center;
+    }
+    .right{
+         width: 100%;
+        padding: 10px 0px;
+    }
+    .head{
+        bottom: 0px;;
+    }
 }
