@@ -320,7 +320,7 @@ button:hover{
 .project{
     position: relative;
     width:600px;
-    height:400px;
+    height:350px;
    border-radius: 20px;
     background-image: url("https://i.ytimg.com/vi/CQZxeoQeo5c/sddefault.jpg");
     background-size: cover;
@@ -529,4 +529,67 @@ i:hover{
 }
 
 /* skills-section  */
-.skills-section
+.skills-section{
+    width:100%;
+    border:2px solid red;
+    display: flex;
+    background-color: black;
+    color: aliceblue;
+    
+}
+.skills-left{
+    width:50%;
+    border:2px solid yellowgreen;
+    padding: 10px 20px;
+    
+}
+.skills-left p{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.skills-right{
+   position: relative;
+    width:50%;
+    border:2px solid rgb(50, 117, 205);
+
+}
+.skills-right .svgimg{
+    position:absolute;
+     transform: translate(100%, 100%);
+    z-index: 0;
+   animation:svg-animation 5s ease-in-out infinite alternate;
+
+   
+}
+.skills-right .svgimg img{
+    opacity: 0.4;
+}
+
+@keyframes svg-animation{
+
+      0% {
+    transform: translate(50%, 50%) translateX(0);
+  }
+  100% {
+    transform: translate(50%, 50%) translateY(100px);
+}}
+.icons-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+padding-top: 3rem;
+position: relative;
+z-index: 1;
+}
+.icons-wrapper i{
+    color:rgb(192, 192, 192);
+    font-size: 4.5rem;
+
+}
+.icons-wrapper i:hover{
+    color:rgb(187, 9, 9)
+}
