@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>parallax-fixed-demo</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:system-ui,Arial;background:#000;color:#fff;line-height:1.6}
+
+    /* container */
+    .main{overflow-x:hidden;}
+
+    /* ---------- HERO (head) ---------- */
+    .head{
+      position:relative;
+      height:100vh;
+      overflow:hidden;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      perspective:1000px; /* larger perspective */
+      background:#000; /* fallback */
+    }
+
+    /* BACK layer: slightly behind and scaled */
+    .head .back{
+      position:absolute;
+      inset:0; /* top:0;right:0;bottom:0;left:0 */
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      transform:translateZ(-200px) scale(1.5); /* subtle depth */
+      transform-origin:center;
+      will-change:transform;
+  
+    }
+
+    /* FRONT layer: main subject */
+    .head .front{
+      position:relative;
+      width:40vmin;
+      max-width:420px;
+      z-index:2;
+      transform:translateZ(0);
+    }
+
+    /* some heading / overlay text if needed */
+    .hero-text{
+      position:absolute;
+      z-index:3;
+      text-align:center;
+      pointer-events:none;
+      font-size:clamp(18px,3vw,28px);
+      background:rgba(0,0,0,0.35);
+      padding:0.6rem 1rem;
+      border-radius:10px;
+      color:#fff;
+    }
+
+    /* body paragraph content */
+    .content{
+      max-width:900px;
+      margin:2rem auto;
+      padding:1rem;
+      background:transparent;
+      color:#eee;
+    }
+
+    /* ---------- ADV section with fixed background ---------- */
+    .adv{
+      /* using background image so it stays fixed while text scrolls */
+      min-height:80vh;
+      padding:6rem 1.25rem;
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      background-image: url("https://rezkit-tour-images.b-cdn.net/01h7ywwd7at70t98wdj69emng5/images/01JGNTGFEYV0ERRA4XZQXH7MAE.jpg?width=1800&height=850&crop_gravity=center&aspect_ratio=1800%3A850");
+      background-size:cover;
+      background-position:center;
+      background-attachment:fixed; /* makes the image fixed while this section scrolls */
+      color:#fff;
+    }
+
+    /* text block over adv */
+    .adv .card{
+      width:100%;
+      width:100%;
+      background:rgba(0, 0, 0, 0.904);
+      padding:1.5rem;
+      border-radius:8px;
+      box-shadow:0 6px 20px rgba(0,0,0,0.6);
+    }
+
+    /* responsive tweaks (mobile may ignore background-attachment:fixed) */
+    @media (max-width:900px){
+      .head .front{ width:55vmin }
+      /* mobile fallback: use local parallax effect instead of fixed bg */
+      .adv{
+        background-attachment:scroll;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <!-- HERO -->
+    <section class="head">
+      <img class="back" src="images/nature.png" alt="background nature">
+      <img class="front" src="images/theman.png" alt="person">
+      <div class="hero-text">Hero section — subtle 3D parallax</div>
+    </section>
+
+    <!-- long lorem content -->
+    <div class="content">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum minima, rem quae optio ratione, vitae cum...
+        <!-- keep the long text here -->
+      </p>
+    </div>
+
+    <!-- ADV SECTION: fixed background visible while text scrolls over it -->
+    <section class="adv">
+      <div class="card">
+        <h2>Adv Section</h2>
+        <p>
+          Yeh section hai jahan aapka background image fixed rahega (desktop pe). Text upar se scroll hota nazar aayega.
+          Aap chahen to card ko translucent bana ke readability bada sakte hain.
+        </p>
+
+        <p>
+          Aur bhi additional paragraphs add karen taaki aapko image ke upar scrolling effect clearly dikhe.
+        </p>
+        <p>More content ...</p>
+        <p>More content ...</p>
+      </div>
+    </section>
+
+    <!-- more content below so page ka end black gap na lage -->
+    <div class="content" style="margin-bottom:6rem">
+      <p>Extra footer content so page doesn't end abrupt Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi minus reprehenderit natus porro numquam, fuga rem. Asperiores modi earum repellendus velit ex, omnis, facilis, totam at commodi impedit magni porro.
+      Dolorem fugit laudantium reiciendis sit iure corrupti accusamus minus veritatis veniam voluptates est, perspiciatis tempora deleniti autem ipsum maiores animi reprehenderit architecto eveniet ut consectetur adipisci mollitia, eum alias! Adipisci.
+      Vel, nulla. Doloribus asperiores temporibus optio, a consequuntur, maiores ipsam iure sapiente cupiditate nam accusamus maxime quia omnis illo eveniet nulla reprehenderit. Ipsum modi esse quis omnis, voluptatibus sit provident.
+      Quos atque earum illo voluptate praesentium deleniti cumque enim unde ut. Vitae ad voluptatem corrupti veritatis tempora! Alias itaque, ab natus commodi vel pariatur nostrum. Delectus accusantium ut molestiae eius.
+      Aut architecto soluta eveniet autem, et amet molestias recusandae odio veniam, perferendis repellat! Vitae veniam id doloremque. Tenetur, sunt perspiciatis quibusdam consequuntur perferendis provident ullam error, quidem hic expedita nisi.
+      Quam enim, inventore reiciendis fugit doloribus ex impedit laudantium, dolores sequi quia possimus, illo laborum rerum ullam cupiditate commodi a! Atque quisquam nam similique earum doloribus sequi, iusto facilis reprehenderit?
+      Placeat doloribus temporibus, sed eos, voluptas veniam pariatur explicabo vero perspiciatis molestiae, sunt cum laborum repellat perferendis. Maxime, quos repellat? Asperiores laudantium quibusdam quaerat minus provident fugiat ratione voluptatum eius?
+      Id maiores accusantium totam amet corrupti tempore aut animi officiis molestiae in. Incidunt repellendus deserunt, fugiat quasi excepturi, ullam cum expedita corporis soluta a, natus itaque aliquid iure nobis ex.
+      Id eum, autem ea vitae sit deserunt veniam corporis ullam. Quam iusto id iure obcaecati maxime nam harum! Quo recusandae totam natus nihil quae molestiae saepe vel aspernatur placeat atque!
+      Id eos officia deserunt, quam at aspernatur placeat quis, dolor, in architecto asperiores ipsam et impedit. Magnam corrupti quos autem sint ipsum modi dicta distinctio accusamus praesentium, voluptates, facere totam.
+      Ab, magnam mollitia? Id praesentium expedita minima sunt rem saepe perspiciatis, sequi accusantium soluta asperiores voluptatum esse autem maxime nam quibusdam eius labore error atque quos amet cupiditate eos deserunt.
+      Incidunt nesciunt quos quia dolorem odit. Ducimus, aliquid. Alias est, cumque laborum explicabo iste odio, temporibus deleniti consequatur dolorem sint placeat labore animi rerum fuga et iure quae commodi ipsa!
+      Sed, nostrum aut praesentium sequi necessitatibus dolor quod quos quaerat, laboriosam obcaecati animi fugiat odio molestias eos voluptates voluptate nesciunt dolore porro excepturi quibusdam iste debitis. Rem perferendis qui ab!
+      Quasi quisquam explicabo aperiam minus optio sit iste enim! Expedita itaque officia veritatis maiores! Minus obcaecati quae id hic ratione eius ipsam natus aut. Iste labore perspiciatis maiores illum quas.
+      Distinctio quia magnam fuga ducimus eaque culpa delectus nemo adipisci amet. Consequuntur iure, praesentium voluptatum perspiciatis dolore animi vero molestias, porro molestiae architecto necessitatibus, est ipsa quasi non. Vel, ab.ly.</p>
+    </div>
+
+  </div>
+</body>
+</html>

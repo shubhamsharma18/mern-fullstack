@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated boxes</title>
+</head>
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+
+    }
+
+    .container {
+    min-height: 100vh;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+
+
+    }
+
+    .main {
+        background-color: brown;
+        ;
+        width: 700px;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 10px 15px;
+
+    }
+
+    .box {
+        height:200px;
+        width: 200px;
+        background-color: bisque;
+        position: relative;
+        z-index: 1;
+        color:bisque;
+        text-align: center;
+        padding:3px 3px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+    }
+
+    .box::before {
+        content: "";
+        position: absolute;
+        background-color: blueviolet;
+    width:0px;
+
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        transform: scaleX(0);
+        transform-origin: left;  
+        transition: all 1s;
+        z-index: -1;
+
+    }
+
+    .box:hover::before {
+        transform: scaleX(1);
+        width:100%;
+
+        background-color: blueviolet;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="main">
+
+            <div class="box" id="box1">HELLO JI</div>
+            <div class="box" id="box2">This is called hover effect</div>
+            <div class="box" id="box2">विजयदशमी</div>
+            <div class="box" id="box2">⚡ Eat • Sleep • Debug • Repeat</div>
+            <div class="box" id="box2">404 Sleep Not Found.</div>
+           
+
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
